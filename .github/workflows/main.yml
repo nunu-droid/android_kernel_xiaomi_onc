@@ -18,11 +18,11 @@ jobs:
       uses: lemniskett/android-kernel-actions@master
       id: build
       env:
-        NAME: Loganysl
+        NAME: SDM845
       with:
         arch: arm64
         compiler: gcc/12
-        defconfig: onc-perf_defconfig
+        defconfig: sdm845_defconfig
         image: Image.gz-dtb
 
     - name: Upload Kernel and Module
